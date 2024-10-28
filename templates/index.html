@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Fashion Try-On</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <div>
+        <img src="{{ url_for('static', filename='logo2.png') }}" alt="Logo" style="height: 40px; width: 40px; margin-right: 10px;">
+        <span>Virtual Fashion Try-On</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" style="color:#ffffff">Home</a></li>
+            <li><a href="{{ url_for('outfits') }}" style="color:#ffffff">Outfits</a></li>
+            <li class="dropdown">
+                <a href="#" style="color:#ffffff">Shopping Sites <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="https://www.flipkart.com/" target="_blank">Flipkart</a>
+                    <a href="https://www.amazon.com/" target="_blank">Amazon</a>
+                    <a href="https://www.ajio.com/" target="_blank">Ajio</a>
+                    <a href="https://www.myntra.com/" target="_blank">Myntra</a>
+                </div>
+            </li>
+            <li><a href="#" style="color:#ffffff">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 style="text-align: center;">Try on Here !!!</h2>
+    <br><br>
+    <form action="/try_on" method="GET">
+        <button type="submit" class="try-on-button"><i class="fas fa-tshirt"></i> Try-On Virtually </button>
+    </form>
+</div>
+
+<!-- <footer>
+    <p style="color:#ffffff">&copy; 2024 Virtual Fashion Try-On. All rights reserved.</p>
+</footer>
+
+<script>
+    // Optionally, add JavaScript for frontend interactions
+</script> -->
+
+</body>
+</html>

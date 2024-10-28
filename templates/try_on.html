@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try-On Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="{{ url_for('static', filename='logo2.png') }}" alt="Logo" style="height: 40px; width: 40px; margin-right: 10px;">
+      <span>Virtual Fashion Try-On</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/" style="color:#ffffff">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align: center;">Virtual Try-On in Progress...</h2>
+    <br><br>
+    <div class="video-container">
+      <img id="video" width="640" height="480">
+    </div>
+  </div>
+
+  <!-- <footer>
+    <p style="color:#ffffff">&copy; 2024 Virtual Fashion Try-On. All rights reserved.</p>
+  </footer> -->
+
+  <script>
+    const video = document.getElementById('video');
+    const videoSrc = "{{ url_for('video_feed') }}";
+    video.src = videoSrc;
+  </script>
+</body>
+</html>

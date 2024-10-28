@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfits</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="{{ url_for('static', filename='logo2.png') }}" alt="Logo" style="height: 40px; width: 40px; margin-right: 10px;">
+      <span>Virtual Fashion Try-On</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/" style="color:#ffffff">Home</a></li>
+        <li><a href="{{ url_for('outfits') }}" style="color:#ffffff">Outfits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align: center;">Available Shirts</h2>
+    <div class="shirt-gallery">
+      {% for shirt in shirts %}
+      <div class="shirt-item">
+        <img src="{{ url_for('shirt_image', filename=shirt) }}" alt="{{ shirt }}">
+        <p>{{ shirt }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- <footer>
+    <p style="color:#ffffff">&copy; 2024 Virtual Fashion Try-On. All rights reserved.</p>
+  </footer> -->
+</body>
+</html>

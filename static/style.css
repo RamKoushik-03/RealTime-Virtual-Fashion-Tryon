@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  background-image: url('bg.jpg'); /* Add your background image URL here */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header styles */
+header {
+  background-color: #34495e; /* Dark blue color */
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffb703; /* Yellow color */
+}
+
+/* Main content */
+.container {
+  max-width: 800px;
+  margin: 220px auto 0; /* Adjusted margin */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Video container styles */
+.video-container {
+  width: 100%;
+  height: auto;
+  background-color: #fff; /* White background for the video container */
+  padding: 20px; /* Padding around the video */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  width: 640px;
+  height: 480px;
+  border-radius: 10px; /* Rounded corners for the video */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the video */
+}
+
+/* Try On button styles */
+.try-on-button {
+  background-color: #2ecc71; /* Green color */
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.try-on-button:hover {
+  background-color: #27ae60; /* Darker green color */
+}
+
+/* Footer styles */
+footer {
+  background-color: #34495e; /* Dark blue color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+span {
+  color: #ffffff;
+  font-size: xx-large;
+  /* font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer p {
+  font-size: 14px;
+  height: 50px;
+}
+
+.shirt-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.shirt-item {
+  flex: 1 0 21%; /* Adjust the width of the items */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shirt-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.shirt-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Add to your existing style.css */
+.shirt-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shirt-item {
+  text-align: center;
+  width: 150px;
+}
+
+.shirt-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
