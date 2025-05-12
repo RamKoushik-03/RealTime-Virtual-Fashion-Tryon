@@ -2,4 +2,4 @@ Virtual Fashion Try-On is an AI-powered, real-time web application that allows u
 
 ![image](https://github.com/user-attachments/assets/92aaffb7-ba9d-49c9-bddc-0fd0f9243d19)
 
-![image](https://github.com/user-attachments/assets/06c873ab-4dff-4f18-b880-08a56bb67b71)
+![image](https://github.com/user-attachments/assets/5e0bb8eb-c5b1-4a69-9e33-cb175c0dfaba)
